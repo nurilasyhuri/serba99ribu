@@ -1,0 +1,15 @@
+{
+  "name": "serba99ribu",
+  "version": "1.0.0",
+  "description": "Katalog belanja hemat & portal afiliasi serba di bawah Rp99.000",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview --host"
+  },
+  "dependencies": {
+    "astro": "^5.4.1"
+  }
+}

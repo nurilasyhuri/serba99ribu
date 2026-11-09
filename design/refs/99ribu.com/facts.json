@@ -1,0 +1,667 @@
+{
+  "url": "https://99ribu.com",
+  "capturedAt": "2026-11-09T03:51:02.204Z",
+  "viewports": {
+    "360": {
+      "height": 4222,
+      "viewportHeight": 800,
+      "outline": [
+        {
+          "kind": "header",
+          "tag": "header",
+          "y": 0,
+          "h": 86,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 1,
+          "heading": null
+        },
+        {
+          "kind": "header",
+          "tag": "nav",
+          "y": 86,
+          "h": 60,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 5,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "section",
+          "y": 154,
+          "h": 530,
+          "cols": 3,
+          "bg": "rgb(239, 233, 253)",
+          "media": 6,
+          "heading": "MaksimalRp99.000"
+        },
+        {
+          "kind": "section",
+          "tag": "ul",
+          "y": 760,
+          "h": 388,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 10,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "ul",
+          "y": 1188,
+          "h": 397,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 12,
+          "heading": "Kecantikan"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1625,
+          "h": 352,
+          "cols": 5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 40,
+          "heading": "SR12 Minyak Bulus"
+        },
+        {
+          "kind": "section",
+          "tag": "ul",
+          "y": 2053,
+          "h": 344,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 12,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 2473,
+          "h": 949,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 24,
+          "heading": "SR12 Minyak Bulus"
+        },
+        {
+          "kind": "header",
+          "tag": "nav",
+          "y": 736,
+          "h": 64,
+          "cols": 5,
+          "bg": "rgb(255, 255, 255)",
+          "media": 0,
+          "heading": null
+        },
+        {
+          "kind": "footer",
+          "tag": "footer",
+          "y": 3446,
+          "h": 712,
+          "cols": 1,
+          "bg": "rgb(255, 255, 255)",
+          "media": 0,
+          "heading": "Belanja"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 4158,
+          "h": 64,
+          "cols": 1,
+          "bg": "rgb(255, 255, 255)",
+          "media": 0,
+          "heading": null
+        }
+      ],
+      "title": "99ribu - Belanja Online Semua Produk Harga Maksimal Rp99.000",
+      "fonts": [
+        {
+          "v": "Inter",
+          "c": 1551
+        }
+      ],
+      "sizes": [
+        {
+          "v": "14px",
+          "c": 1034
+        },
+        {
+          "v": "12px",
+          "c": 177
+        },
+        {
+          "v": "16px",
+          "c": 132
+        },
+        {
+          "v": "18px",
+          "c": 91
+        },
+        {
+          "v": "39.6px",
+          "c": 56
+        },
+        {
+          "v": "24px",
+          "c": 30
+        },
+        {
+          "v": "36px",
+          "c": 24
+        },
+        {
+          "v": "28.8px",
+          "c": 5
+        }
+      ],
+      "palette": {
+        "text": [
+          {
+            "v": "rgb(18, 18, 18)",
+            "c": 1165
+          },
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 138
+          },
+          {
+            "v": "rgba(255, 255, 255, 0.75)",
+            "c": 136
+          },
+          {
+            "v": "rgb(133, 133, 133)",
+            "c": 46
+          },
+          {
+            "v": "rgb(112, 112, 112)",
+            "c": 44
+          },
+          {
+            "v": "rgba(0, 0, 0, 0.56)",
+            "c": 15
+          }
+        ],
+        "background": [
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 1137947
+          },
+          {
+            "v": "rgb(47, 36, 102)",
+            "c": 267195
+          },
+          {
+            "v": "rgb(239, 233, 253)",
+            "c": 173820
+          },
+          {
+            "v": "rgb(138, 51, 72)",
+            "c": 99581
+          },
+          {
+            "v": "rgb(44, 74, 122)",
+            "c": 99581
+          },
+          {
+            "v": "rgb(61, 66, 80)",
+            "c": 99581
+          }
+        ]
+      },
+      "navLabels": [
+        10,
+        12,
+        8,
+        12,
+        14,
+        10,
+        12,
+        8,
+        12,
+        14,
+        7,
+        8,
+        4,
+        9,
+        4
+      ],
+      "buttons": 18,
+      "primaryButtons": 4,
+      "outboundLinks": 0,
+      "images": 56,
+      "h1": {
+        "el": "h1 \"MaksimalRp99.000\"",
+        "words": 1,
+        "lines": 2
+      }
+    },
+    "768": {
+      "height": 4105,
+      "viewportHeight": 1024,
+      "outline": [
+        {
+          "kind": "header",
+          "tag": "header",
+          "y": 0,
+          "h": 92,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 1,
+          "heading": null
+        },
+        {
+          "kind": "header",
+          "tag": "nav",
+          "y": 92,
+          "h": 70,
+          "cols": 5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 5,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "section",
+          "y": 162,
+          "h": 440,
+          "cols": 2,
+          "bg": "rgb(239, 233, 253)",
+          "media": 6,
+          "heading": "MaksimalRp99.000"
+        },
+        {
+          "kind": "section",
+          "tag": "ul",
+          "y": 680,
+          "h": 388,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 10,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "ul",
+          "y": 1108,
+          "h": 308,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 12,
+          "heading": "Kecantikan"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1456,
+          "h": 457,
+          "cols": 5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 40,
+          "heading": "SR12 Minyak Bulus"
+        },
+        {
+          "kind": "section",
+          "tag": "ul",
+          "y": 1991,
+          "h": 467,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 12,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 2536,
+          "h": 1053,
+          "cols": 4,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 24,
+          "heading": "SR12 Minyak Bulus"
+        },
+        {
+          "kind": "footer",
+          "tag": "footer",
+          "y": 3629,
+          "h": 476,
+          "cols": 1,
+          "bg": "rgb(255, 255, 255)",
+          "media": 0,
+          "heading": "Belanja"
+        }
+      ],
+      "title": "99ribu - Belanja Online Semua Produk Harga Maksimal Rp99.000",
+      "fonts": [
+        {
+          "v": "Inter",
+          "c": 1921
+        }
+      ],
+      "sizes": [
+        {
+          "v": "14px",
+          "c": 1231
+        },
+        {
+          "v": "12px",
+          "c": 241
+        },
+        {
+          "v": "16px",
+          "c": 239
+        },
+        {
+          "v": "64px",
+          "c": 80
+        },
+        {
+          "v": "24px",
+          "c": 61
+        },
+        {
+          "v": "20px",
+          "c": 30
+        },
+        {
+          "v": "26.816px",
+          "c": 30
+        },
+        {
+          "v": "28.8px",
+          "c": 5
+        }
+      ],
+      "palette": {
+        "text": [
+          {
+            "v": "rgb(18, 18, 18)",
+            "c": 1533
+          },
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 138
+          },
+          {
+            "v": "rgba(255, 255, 255, 0.75)",
+            "c": 136
+          },
+          {
+            "v": "rgb(133, 133, 133)",
+            "c": 46
+          },
+          {
+            "v": "rgb(112, 112, 112)",
+            "c": 44
+          },
+          {
+            "v": "rgba(0, 0, 0, 0.56)",
+            "c": 15
+          }
+        ],
+        "background": [
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 1815218
+          },
+          {
+            "v": "rgb(47, 36, 102)",
+            "c": 498593
+          },
+          {
+            "v": "rgb(239, 233, 253)",
+            "c": 323840
+          },
+          {
+            "v": "rgb(236, 236, 239)",
+            "c": 89280
+          },
+          {
+            "v": "rgb(138, 51, 72)",
+            "c": 72000
+          },
+          {
+            "v": "rgb(44, 74, 122)",
+            "c": 72000
+          }
+        ]
+      },
+      "navLabels": [
+        10,
+        12,
+        8,
+        12,
+        14,
+        10,
+        12,
+        8,
+        12,
+        14
+      ],
+      "buttons": 21,
+      "primaryButtons": 4,
+      "outboundLinks": 0,
+      "images": 68,
+      "h1": {
+        "el": "h1 \"MaksimalRp99.000\"",
+        "words": 1,
+        "lines": 2
+      }
+    },
+    "1440": {
+      "height": 4449,
+      "viewportHeight": 900,
+      "outline": [
+        {
+          "kind": "header",
+          "tag": "header",
+          "y": 0,
+          "h": 92,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 1,
+          "heading": null
+        },
+        {
+          "kind": "header",
+          "tag": "nav",
+          "y": 92,
+          "h": 74,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 5,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "section",
+          "y": 166,
+          "h": 455,
+          "cols": 3,
+          "bg": "rgb(239, 233, 253)",
+          "media": 6,
+          "heading": "MaksimalRp99.000"
+        },
+        {
+          "kind": "section",
+          "tag": "ul",
+          "y": 699,
+          "h": 256,
+          "cols": 5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 10,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "ul",
+          "y": 995,
+          "h": 522,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 12,
+          "heading": "Kecantikan"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1557,
+          "h": 508,
+          "cols": 5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 40,
+          "heading": "SR12 Minyak Bulus"
+        },
+        {
+          "kind": "section",
+          "tag": "section",
+          "y": 2172,
+          "h": 664,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 12,
+          "heading": "Temukan pilihan"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 2914,
+          "h": 1145,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 24,
+          "heading": "SR12 Minyak Bulus"
+        },
+        {
+          "kind": "footer",
+          "tag": "footer",
+          "y": 4099,
+          "h": 350,
+          "cols": 2,
+          "bg": "rgb(255, 255, 255)",
+          "media": 0,
+          "heading": "Belanja"
+        }
+      ],
+      "title": "99ribu - Belanja Online Semua Produk Harga Maksimal Rp99.000",
+      "fonts": [
+        {
+          "v": "Inter",
+          "c": 2258
+        }
+      ],
+      "sizes": [
+        {
+          "v": "14px",
+          "c": 1435
+        },
+        {
+          "v": "16px",
+          "c": 308
+        },
+        {
+          "v": "12px",
+          "c": 305
+        },
+        {
+          "v": "24px",
+          "c": 61
+        },
+        {
+          "v": "96px",
+          "c": 56
+        },
+        {
+          "v": "32px",
+          "c": 30
+        },
+        {
+          "v": "64px",
+          "c": 24
+        },
+        {
+          "v": "20px",
+          "c": 15
+        }
+      ],
+      "palette": {
+        "text": [
+          {
+            "v": "rgb(18, 18, 18)",
+            "c": 1870
+          },
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 138
+          },
+          {
+            "v": "rgba(255, 255, 255, 0.75)",
+            "c": 136
+          },
+          {
+            "v": "rgb(133, 133, 133)",
+            "c": 46
+          },
+          {
+            "v": "rgb(112, 112, 112)",
+            "c": 44
+          },
+          {
+            "v": "rgba(0, 0, 0, 0.56)",
+            "c": 15
+          }
+        ],
+        "background": [
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 3098081
+          },
+          {
+            "v": "rgb(47, 36, 102)",
+            "c": 639600
+          },
+          {
+            "v": "rgb(239, 233, 253)",
+            "c": 568164
+          },
+          {
+            "v": "rgb(61, 66, 80)",
+            "c": 211501
+          },
+          {
+            "v": "rgb(138, 51, 72)",
+            "c": 211493
+          },
+          {
+            "v": "rgb(44, 74, 122)",
+            "c": 211493
+          }
+        ]
+      },
+      "navLabels": [
+        10,
+        12,
+        8,
+        12,
+        14,
+        10,
+        12,
+        8,
+        12,
+        14
+      ],
+      "buttons": 22,
+      "primaryButtons": 4,
+      "outboundLinks": 0,
+      "images": 77,
+      "h1": {
+        "el": "h1 \"MaksimalRp99.000\"",
+        "words": 1,
+        "lines": 2
+      }
+    }
+  }
+}
