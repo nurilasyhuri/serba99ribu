@@ -1,64 +1,70 @@
-# DESIGN.md
+# DESIGN.md — Serba 99ribu Design System
 
 ## Direction
-Surface/job: Curated affiliate catalog and shoppable guide connecting shoppers to verified products under Rp 99.000.
-References: design/refs/99ribu.com — omnibox search, category pills, high-density product grid, mobile bottom bar.
-Sections (in order, each with its one job):
-1. Store Header & Omnibox: Quick search and brand navigation.
-2. Category Pill Bar: One-tap category switching.
-3. Value Hero Banner: Establish the <= Rp 99.000 price promise and affiliate curation premise.
-4. Curated Product Grid: High-density product discovery with outbound merchant links.
-5. Shoppable Guides & Articles: Value-add editorial listicles highlighting 99ribu affiliate products.
-6. Store Footer: Affiliate disclosure, category directory, and search shortcuts.
+Picked-by: owner 2026-11-10 (Direction: Louis Vuitton Luxury Editorial Anatomy)
+Surface/job: Curated affiliate lifestyle storefront for serba99ribu.com (≤ Rp 99.000).
+References: https://id.louisvuitton.com/eng-id/homepage (Full-bleed ambient video hero, bottom-anchored typography, floating nav, and quiet commerce lookbook).
 
-Feel: Fast, utilitarian, transparent.
-Photo style: Clean white or soft neutral product packshots, 1:1 square ratio, uncompressed webp.
-Motion profile: Subtle (150ms transitions on hover and tap only).
+Sections (in order, each with its one job):
+1. Floating Header: Transparent-to-blur navigation with centered wordmark, left hamburger menu drawer trigger, and search trigger.
+2. Full-Bleed Ambient Hero Video: 100vh cinematic video with subtle gradient overlay, bottom-anchored serif headline, sub-headline, and video pause/play toggle.
+3. Category Quick-Jump Strip: Minimalist horizontal pill strip for instant 1-tap department navigation.
+4. Curated Department Lookbooks ("Explore of Selection"): Dedicated department sections with editorial kickers, Cormorant Garamond headings, and 4-col product grids.
+5. Scenario Buying Guides: 3-column editorial features highlighting everyday lifestyle solutions under Rp 99.000.
+6. Understated Luxury Footer: Brand philosophy, multi-column directory, and transparent affiliate provenance note.
+
+Feel: Calm, luxurious, curated, editorial.
+Photo style: High-resolution packshots, neutral warm studio staging (#f6f5f3), 1:1 square ratio.
+Motion profile: Subtle (150ms ease-out transitions, 300ms image hover scale, prefers-reduced-motion respected).
+
 Three won't do:
-1. No internal cart/checkout or fake discount countdowns.
-2. No popups, spinners, or blocking modals.
-3. No decorative AI-slop sparkles or unverified rating numbers.
+1. No aggressive flashing badges, fake countdown timers, or intrusive modal popups.
+2. No dense unformatted product dumps or noisy e-commerce discount stickers.
+3. No nested card-in-card visual soup or artificial bento clutter.
 
 ### Composition contract
-C1: Omnibox header sits at the top with brand wordmark and search field; search remains accessible across all viewports.
-C2: Category pills bar is horizontally scrollable with smooth touch scrolling and sticky or compact placement below header.
-C3: Hero card uses tinted soft-violet surface (`#efe9fd`) with deep violet typography (`#2f2466`) stating the Rp99.000 price ceiling.
-C4: Product grid maintains 2 columns at 360px mobile, 4 columns at 768px tablet, and 5-6 columns at 1440px desktop.
-C5: Shoppable articles section displays 3 editorial guide cards with reading time and tagged product count.
-C6: Mobile bottom navigation provides instant access to Katalog, Kategori, Artikel, and Cari.
+C1: Floating header is fixed at top; transparent over hero video, transitioning to white-cream with backdrop-filter blur on scroll.
+C2: Wordmark "SERBA 99RIBU" is centered horizontally with wide letter-spacing (+0.25em).
+C3: Hero video is 100vh full-bleed with headline anchored in the bottom third (64px from bottom).
+C4: Category sections open with kicker "EXPLORE OF SELECTION SERBA 99RIBU" followed by refined serif department title.
+C5: Product cards use 1:1 square packshots on neutral background (#f6f5f3), with category, 2-line title, and flat price tag (≤ Rp 99.000).
+C6: Navigation drawer slides in from the left on menu click with full department listing and editorial links.
 
 ## Tokens
 
 ### Colour
-- Primary Accent: `#5b35d5`
-- Primary Dark: `#2f2466`
-- Surface Tint: `#efe9fd`
-- Neutral 900 (Text): `#121212`
-- Neutral 600 (Muted): `#595959`
-- Neutral 200 (Borders): `#e5e7eb`
-- Neutral 50 (Background): `#f8f9fa`
-- White (Cards/Surfaces): `#ffffff`
-- Badge Accent: `#d97706` (solid amber star/badge, WCAG compliant)
+- Canvas Base (Page): `#fafaf9` (Warm Stone Cream)
+- Card Surface: `#ffffff` (Pure White)
+- Surface Neutral: `#f6f5f3` (Warm Studio Packshot Background)
+- Text Main: `#18181b` (High-contrast Charcoal)
+- Text Muted: `#71717a` (Neutral Slate)
+- Text Subtle: `#a1a1aa` (Light Slate Hairline)
+- Accent Warm: `#c2410c` (Refined Terracotta for curated pricing)
+- Accent Dark: `#09090b` (Deep Onyx)
+- Border Subtle: `rgba(0, 0, 0, 0.08)`
 
-### Type
-- Primary Font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif
-- Scale: 12px (label/caption), 14px (body/compact), 16px (base/price), 20px (card title), 28px (h2 section), 36px (h1 hero)
+### Typography
+- Primary Display: 'Cormorant Garamond', Georgia, serif (Editorial Luxury)
+- Primary Body / Sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif
+- Scale:
+  - Kicker / Label: 11px - 12px (All Caps, tracking +0.12em)
+  - Navigation / Meta: 13px - 14px (Inter Medium)
+  - Body: 14px - 16px (Inter Regular, line-height 1.6)
+  - Card Heading: 15px - 16px (Inter Medium, line-height 1.4)
+  - Section Heading: 28px - 36px (Cormorant Garamond SemiBold)
+  - Hero Headline: 36px - 52px (Cormorant Garamond SemiBold, leading tight)
 
-### Radius
-- Cards & Frames: 12px
-- Omnibox Input: 10px
-- Pills & Buttons: 9999px
+### Radius & Elevation
+- Cards: 14px
+- Packshot Stage: 12px
+- Buttons & Pills: 9999px (full pill)
+- Elevation: Flat or atmospheric float (`0 4px 20px -2px rgba(0, 0, 0, 0.05)`)
 
 ### Spacing
-- Base unit: 4px. Scale: 4px, 8px, 12px, 16px, 24px, 32px, 48px. Container max-width: 1280px.
-
-### Motion
-- Durations: 150ms hover/tap state transitions (`ease-out`).
-- Reduced motion: all animations suppressed when `prefers-reduced-motion: reduce`.
+- Scale: 8px base (8px, 16px, 24px, 32px, 48px, 64px, 96px).
+- Container Max Width: 1280px with 20px mobile / 32px desktop padding.
 
 ## Allow
-allow: duplicate-href — Category pills and footer links deliberately repeat target categories for navigation ergonomics.
-allow: primary-actions — Multiple product cards each feature a direct outbound affiliate CTA button.
-allow: first-viewport-words — Hero banner with value proposition and search omnibox in the first viewport.
-allow: marker-count — Catalog product cards display verified price ceiling indicators.
-
+allow: duplicate-href — Category navigation and department cards link to matching curated categories for intuitive discovery.
+allow: primary-actions — Each curated product and department card offers a direct discovery action.
+allow: first-viewport-words — Hero section with brand headline and editorial proposition.

@@ -1,0 +1,88 @@
+---
+---
+
+<section class="relative w-full h-[90vh] min-h-[600px] max-h-[960px] overflow-hidden bg-onyx" aria-label="Hero Spotlight">
+  <!-- Video Container -->
+  <div class="absolute inset-0 w-full h-full">
+    <video
+      id="hero-bg-video"
+      class="w-full h-full object-cover"
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="auto"
+      poster="/hero-poster.jpg"
+    >
+      <source src="/hero.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Cinematic Overlay Gradient -->
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/40 pointer-events-none"
+      aria-hidden="true"
+    ></div>
+  </div>
+
+  <!-- Bottom-Anchored Typography (Louis Vuitton Signature) -->
+  <div class="relative z-20 h-full max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-end pb-16 sm:pb-20">
+    <div class="max-w-3xl mx-auto text-center space-y-3">
+      <h1 class="font-editorial text-3xl sm:text-5xl lg:text-6xl font-semibold text-white leading-[1.15] drop-shadow-md">
+        Curated Essentials for the Modern Lifestyle
+      </h1>
+      
+      <p class="font-sans text-xs sm:text-sm font-semibold tracking-[0.2em] text-[#f5f4f0] uppercase drop-shadow">
+        Premium Quality, Under 99K
+      </p>
+
+      <div class="pt-3">
+        <a
+          href="#katalog"
+          class="inline-block text-xs uppercase tracking-[0.18em] text-white font-medium hover:text-canvas transition-colors pb-1 border-b border-white hover:border-canvas"
+        >
+          Discover the Collection &darr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom Left: Accessible Play/Pause Media Control -->
+    <div class="absolute bottom-6 left-4 sm:left-8 z-30">
+      <button
+        type="button"
+        id="video-control-btn"
+        class="w-9 h-9 rounded-full bg-black/40 backdrop-blur-[6px] text-white/90 hover:text-white border border-white/20 flex items-center justify-center transition-colors hover:bg-black/60 focus:outline-none"
+        aria-label="Pause hero background video"
+      >
+        <svg id="pause-icon" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+        </svg>
+        <svg id="play-icon" class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  const video = document.getElementById('hero-bg-video') as HTMLVideoElement | null;
+  const toggleBtn = document.getElementById('video-control-btn');
+  const pauseIcon = document.getElementById('pause-icon');
+  const playIcon = document.getElementById('play-icon');
+
+  toggleBtn?.addEventListener('click', () => {
+    if (!video) return;
+    if (video.paused) {
+      video.play();
+      pauseIcon?.classList.remove('hidden');
+      playIcon?.classList.add('hidden');
+      toggleBtn.setAttribute('aria-label', 'Pause hero background video');
+    } else {
+      video.pause();
+      pauseIcon?.classList.add('hidden');
+      playIcon?.classList.remove('hidden');
+      toggleBtn.setAttribute('aria-label', 'Play hero background video');
+    }
+  });
+</script>

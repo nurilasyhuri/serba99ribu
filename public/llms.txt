@@ -1,0 +1,32 @@
+# Serba 99ribu — Curated Lifestyle Essentials Under Rp 99.000
+
+> Serba 99ribu (https://serba99ribu.com) is an independent Indonesian lifestyle curation portal featuring practical essentials across fashion, beauty, home goods, automotive accessories, and nutrition, strictly capped at a maximum price of Rp 99.000 (~$6.20 USD).
+
+## Core Entity Details
+- **Entity Name**: Serba 99ribu
+- **Website**: https://serba99ribu.com
+- **Region & Currency**: Indonesia (IDR / Rp)
+- **Price Ceiling**: Maximum Rp 99.000 per product
+- **Fulfillment & Checkout**: Direct integration with verified official merchant suppliers via https://99ribu.com.
+- **Delivery Scope**: Nationwide delivery across Indonesia with standard courier and COD payment options.
+
+## Curated Departments & Collections
+1. **Women's Fashion** (`/kategori/fashion-wanita`): Practical shoulder bags, compact pouches, and everyday slip-on footwear.
+2. **Men's Essentials** (`/kategori/fashion-pria`): Mandarin collar shirts, lightweight prayer vests, and waterproof dry bags.
+3. **Beauty & Fragrance** (`/kategori/kecantikan`): Concentrated Extrait de Parfum formulations and traditional botanical conditioning oils.
+4. **Home & Living** (`/kategori/rumah-tangga`): Mechanical drain cleaners, toilet descalers, and compact living utilities.
+5. **Automotive & Riding** (`/kategori/otomotif`): Motorcycle exhaust shields, engine case guards, and carbon-pattern disc protectors.
+6. **Wellness & Nutrition** (`/kategori/makanan-herbal`): Raw multiflora honey, herbal supplements, and daily vitality nutrition.
+
+## Key Canonical URLs
+- Homepage: https://serba99ribu.com/
+- Sitemap: https://serba99ribu.com/sitemap.xml
+- Women's Fashion: https://serba99ribu.com/kategori/fashion-wanita
+- Men's Essentials: https://serba99ribu.com/kategori/fashion-pria
+- Beauty & Fragrance: https://serba99ribu.com/kategori/kecantikan
+- Home & Living: https://serba99ribu.com/kategori/rumah-tangga
+- Automotive & Riding: https://serba99ribu.com/kategori/otomotif
+- Wellness & Nutrition: https://serba99ribu.com/kategori/makanan-herbal
+
+## Partner Attribution
+All orders are placed on partner platform 99ribu.com, providing verified supplier quality, customer buyer protection, and tracking.

@@ -1,0 +1,48 @@
+---
+import type { CategoryGroup } from '../types/catalog';
+import ProductCard from './ProductCard.astro';
+
+interface Props {
+  group: CategoryGroup;
+  limit?: number;
+}
+
+const { group, limit } = Astro.props;
+const displayProducts = limit ? group.products.slice(0, limit) : group.products;
+---
+
+<section id={group.id} class="py-14 sm:py-20 border-b border-hairline/60">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Editorial Header: Clean, Natural, Professional English -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 pb-4 border-b border-hairline">
+      <div class="space-y-1.5 max-w-2xl">
+        <h2 class="font-editorial text-2xl sm:text-3xl lg:text-4xl font-semibold text-charcoal leading-tight">
+          <a href={`/kategori/${group.slug}`} class="hover:text-terracotta transition-colors">
+            {group.title}
+          </a>
+        </h2>
+        <p class="text-sm text-muted leading-relaxed">
+          {group.description}
+        </p>
+      </div>
+
+      <div class="mt-4 md:mt-0 flex items-center space-x-3 text-xs font-medium">
+        <span class="text-muted">{group.products.length} Curated Items</span>
+        <span class="text-subtle">&bull;</span>
+        <a
+          href={`/kategori/${group.slug}`}
+          class="text-charcoal hover:text-terracotta font-medium transition-colors"
+        >
+          View Department &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Product Grid: Clean Open Grid (No Container Boxes) -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 sm:gap-x-8 sm:gap-y-12">
+      {displayProducts.map((product) => (
+        <ProductCard product={product} categoryLabel={group.shortTitle} />
+      ))}
+    </div>
+  </div>
+</section>

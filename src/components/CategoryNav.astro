@@ -1,0 +1,29 @@
+---
+import { categoryDefinitions } from '../utils/catalog';
+---
+
+<nav id="katalog" class="sticky top-16 sm:top-20 z-40 bg-canvas/95 backdrop-blur-[8px] border-b border-hairline py-3.5 transition-colors">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center space-x-2 overflow-x-auto hide-scrollbar py-1">
+      <span class="text-xs font-semibold tracking-[0.12em] uppercase text-muted whitespace-nowrap mr-2 hidden md:inline">
+        Departments:
+      </span>
+
+      <a
+        href="/"
+        class="inline-flex items-center px-4 py-1.5 text-xs font-medium bg-charcoal text-white hover:bg-black transition-colors whitespace-nowrap"
+      >
+        All
+      </a>
+
+      {categoryDefinitions.map((cat) => (
+        <a
+          href={`/kategori/${cat.slug}`}
+          class="inline-flex items-center px-4 py-1.5 text-xs font-medium bg-neutral hover:bg-charcoal hover:text-white text-charcoal border border-hairline transition-colors whitespace-nowrap"
+        >
+          {cat.shortTitle}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>

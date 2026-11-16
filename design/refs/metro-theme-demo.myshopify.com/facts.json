@@ -1,0 +1,1009 @@
+{
+  "url": "https://metro-theme-demo.myshopify.com/",
+  "capturedAt": "2026-11-09T06:27:16.017Z",
+  "viewports": {
+    "360": {
+      "height": 12128,
+      "viewportHeight": 800,
+      "outline": [
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 86,
+          "h": 42,
+          "cols": 2,
+          "bg": "rgb(255, 255, 255)",
+          "media": 1,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 158,
+          "h": 333,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 24,
+          "heading": "Modern Cozy Decor"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 428,
+          "h": 63,
+          "cols": 4,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 4,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 582,
+          "h": 175,
+          "cols": 5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 5,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 848,
+          "h": 393,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 42,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1271,
+          "h": 460,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 2,
+          "heading": "Up to 50% OFF on Newest Additions"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1751,
+          "h": 460,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 2,
+          "heading": "Up to 30% OFF on Premium Selections"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 2251,
+          "h": 651,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 1,
+          "heading": "Transform Your Home with Premium Furniture and Elegant Décor"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 2942,
+          "h": 854,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 8,
+          "heading": "Soft Textures"
+        },
+        {
+          "kind": "section",
+          "tag": "scrolling-text",
+          "y": 3806,
+          "h": 51,
+          "cols": 4,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 8,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 3907,
+          "h": 330,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 1,
+          "heading": "Unlock Exclusive 20% Savings On New Arrivals"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 4257,
+          "h": 393,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 29,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "product-info",
+          "y": 4700,
+          "h": 1031,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 10,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 5771,
+          "h": 712,
+          "cols": 1,
+          "bg": "rgb(36, 36, 36)",
+          "media": 11,
+          "heading": "Furnish Every Corner"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 6503,
+          "h": 68,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 18,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 6591,
+          "h": 400,
+          "cols": 5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 10,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 7031,
+          "h": 898,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 2,
+          "heading": "Design Your Perfect Home"
+        },
+        {
+          "kind": "section",
+          "tag": "bundle-products-card",
+          "y": 7968,
+          "h": 2115,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 9,
+          "heading": "Saving 20% On Bundle"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 10124,
+          "h": 538,
+          "cols": 1,
+          "bg": "rgb(246, 246, 246)",
+          "media": 29,
+          "heading": "Our Happy Customers"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 10746,
+          "h": 377,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 9,
+          "heading": null
+        },
+        {
+          "kind": "footer",
+          "tag": "footer",
+          "y": 11163,
+          "h": 965,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 20,
+          "heading": null
+        }
+      ],
+      "title": "Metro theme – metro-theme-demo",
+      "fonts": [
+        {
+          "v": "Muli",
+          "c": 6675
+        },
+        {
+          "v": "Archivo",
+          "c": 1827
+        },
+        {
+          "v": "Cormorant",
+          "c": 40
+        }
+      ],
+      "sizes": [
+        {
+          "v": "14px",
+          "c": 4066
+        },
+        {
+          "v": "12px",
+          "c": 2945
+        },
+        {
+          "v": "16.2px",
+          "c": 351
+        },
+        {
+          "v": "10px",
+          "c": 252
+        },
+        {
+          "v": "16px",
+          "c": 182
+        },
+        {
+          "v": "39px",
+          "c": 154
+        },
+        {
+          "v": "31.2px",
+          "c": 143
+        },
+        {
+          "v": "23.4px",
+          "c": 132
+        }
+      ],
+      "palette": {
+        "text": [
+          {
+            "v": "rgb(0, 0, 0)",
+            "c": 6410
+          },
+          {
+            "v": "rgb(178, 178, 178)",
+            "c": 924
+          },
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 894
+          },
+          {
+            "v": "color(srgb 1 1 1 / 0.5)",
+            "c": 113
+          },
+          {
+            "v": "color(srgb 1 1 1 / 0.6)",
+            "c": 90
+          },
+          {
+            "v": "rgb(92, 92, 92)",
+            "c": 85
+          }
+        ],
+        "background": [
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 4562490
+          },
+          {
+            "v": "rgb(206, 206, 210)",
+            "c": 2919177
+          },
+          {
+            "v": "rgb(246, 246, 246)",
+            "c": 869494
+          },
+          {
+            "v": "rgb(36, 36, 36)",
+            "c": 549780
+          },
+          {
+            "v": "rgb(244, 244, 245)",
+            "c": 134325
+          },
+          {
+            "v": "rgb(25, 22, 22)",
+            "c": 47936
+          }
+        ]
+      },
+      "navLabels": [],
+      "buttons": 31,
+      "primaryButtons": 25,
+      "outboundLinks": 15,
+      "images": 143,
+      "h1": null
+    },
+    "768": {
+      "height": 10856,
+      "viewportHeight": 1024,
+      "outline": [
+        {
+          "kind": "section",
+          "tag": "a",
+          "y": -1,
+          "h": 42,
+          "cols": 1,
+          "bg": "rgb(18, 18, 18)",
+          "media": 0,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 91,
+          "h": 46,
+          "cols": 2,
+          "bg": "rgb(255, 255, 255)",
+          "media": 1,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 167,
+          "h": 684,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 24,
+          "heading": "Modern Cozy Decor"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 713,
+          "h": 118,
+          "cols": 4,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 4,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 950,
+          "h": 177,
+          "cols": 5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 5,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1218,
+          "h": 363,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 42,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1656,
+          "h": 320,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 2,
+          "heading": "Up to 50% OFF on Newest Additions"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1656,
+          "h": 320,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 2,
+          "heading": "Up to 30% OFF on Premium Selections"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 2036,
+          "h": 457,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 1,
+          "heading": "Transform Your Home with Premium Furniture and Elegant Décor"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 2553,
+          "h": 780,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 8,
+          "heading": "Soft Textures"
+        },
+        {
+          "kind": "section",
+          "tag": "scrolling-text",
+          "y": 3333,
+          "h": 54,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 12,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 3412,
+          "h": 490,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 1,
+          "heading": "Unlock Exclusive 20% Savings On New Arrivals"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 3462,
+          "h": 386,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 29,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "product-info",
+          "y": 3952,
+          "h": 693,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 10,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 4695,
+          "h": 548,
+          "cols": 1,
+          "bg": "rgb(36, 36, 36)",
+          "media": 11,
+          "heading": "Furnish Every Corner"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 5263,
+          "h": 71,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 18,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 5354,
+          "h": 500,
+          "cols": 5,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 10,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 5986,
+          "h": 639,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 2,
+          "heading": "Design Your Perfect Home"
+        },
+        {
+          "kind": "section",
+          "tag": "bundle-products-card",
+          "y": 6690,
+          "h": 2194,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 9,
+          "heading": "Saving 20% On Bundle"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 8924,
+          "h": 518,
+          "cols": 1,
+          "bg": "rgb(246, 246, 246)",
+          "media": 29,
+          "heading": "Our Happy Customers"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 9532,
+          "h": 366,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 9,
+          "heading": null
+        },
+        {
+          "kind": "footer",
+          "tag": "footer",
+          "y": 9953,
+          "h": 904,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 20,
+          "heading": null
+        }
+      ],
+      "title": "Metro theme – metro-theme-demo",
+      "fonts": [
+        {
+          "v": "Muli",
+          "c": 6759
+        },
+        {
+          "v": "Archivo",
+          "c": 1889
+        },
+        {
+          "v": "Cormorant",
+          "c": 40
+        },
+        {
+          "v": "",
+          "c": 2
+        }
+      ],
+      "sizes": [
+        {
+          "v": "14px",
+          "c": 4553
+        },
+        {
+          "v": "12px",
+          "c": 2306
+        },
+        {
+          "v": "16px",
+          "c": 418
+        },
+        {
+          "v": "16.2px",
+          "c": 351
+        },
+        {
+          "v": "10px",
+          "c": 252
+        },
+        {
+          "v": "40px",
+          "c": 154
+        },
+        {
+          "v": "32px",
+          "c": 143
+        },
+        {
+          "v": "24px",
+          "c": 132
+        }
+      ],
+      "palette": {
+        "text": [
+          {
+            "v": "rgb(0, 0, 0)",
+            "c": 6494
+          },
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 956
+          },
+          {
+            "v": "rgb(178, 178, 178)",
+            "c": 924
+          },
+          {
+            "v": "color(srgb 1 1 1 / 0.5)",
+            "c": 113
+          },
+          {
+            "v": "color(srgb 1 1 1 / 0.6)",
+            "c": 90
+          },
+          {
+            "v": "rgb(92, 92, 92)",
+            "c": 85
+          }
+        ],
+        "background": [
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 7490278
+          },
+          {
+            "v": "rgb(206, 206, 210)",
+            "c": 2127176
+          },
+          {
+            "v": "rgb(246, 246, 246)",
+            "c": 1759602
+          },
+          {
+            "v": "rgb(36, 36, 36)",
+            "c": 953376
+          },
+          {
+            "v": "rgb(244, 244, 245)",
+            "c": 540864
+          },
+          {
+            "v": "rgb(25, 22, 22)",
+            "c": 139320
+          }
+        ]
+      },
+      "navLabels": [],
+      "buttons": 31,
+      "primaryButtons": 25,
+      "outboundLinks": 15,
+      "images": 147,
+      "h1": null
+    },
+    "1440": {
+      "height": 10377,
+      "viewportHeight": 900,
+      "outline": [
+        {
+          "kind": "section",
+          "tag": "a",
+          "y": -1,
+          "h": 42,
+          "cols": 1,
+          "bg": "rgb(18, 18, 18)",
+          "media": 0,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 37,
+          "h": 82,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 15,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 139,
+          "h": 609,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 24,
+          "heading": "Modern Cozy Decor"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 629,
+          "h": 99,
+          "cols": 4,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 4,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 792,
+          "h": 254,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 5,
+          "heading": "Luxury Collection"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1086,
+          "h": 481,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 42,
+          "heading": "Modern Classics"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1587,
+          "h": 320,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 2,
+          "heading": "Up to 50% OFF on Newest Additions"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1587,
+          "h": 320,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 2,
+          "heading": "Up to 30% OFF on Premium Selections"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 1967,
+          "h": 448,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 1,
+          "heading": "Transform Your Home with Premium Furniture and Elegant Décor"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 2474,
+          "h": 780,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 8,
+          "heading": "Soft Textures"
+        },
+        {
+          "kind": "section",
+          "tag": "scrolling-text",
+          "y": 3254,
+          "h": 54,
+          "cols": 6,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 20,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 3333,
+          "h": 476,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 1,
+          "heading": "Unlock Exclusive 20% Savings On New Arrivals"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 3333,
+          "h": 476,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 29,
+          "heading": "Deal Of The Month"
+        },
+        {
+          "kind": "section",
+          "tag": "product-info",
+          "y": 3859,
+          "h": 649,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 10,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 4558,
+          "h": 530,
+          "cols": 2,
+          "bg": "rgb(36, 36, 36)",
+          "media": 11,
+          "heading": "Furnish Every Corner"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 5109,
+          "h": 71,
+          "cols": 4,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 24,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 5200,
+          "h": 562,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 10,
+          "heading": null
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 5840,
+          "h": 500,
+          "cols": 2,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 2,
+          "heading": "Design Your Perfect Home"
+        },
+        {
+          "kind": "section",
+          "tag": "bundle-products-card",
+          "y": 6405,
+          "h": 1895,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 9,
+          "heading": "Saving 20% On Bundle"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 8340,
+          "h": 621,
+          "cols": 1,
+          "bg": "rgb(246, 246, 246)",
+          "media": 29,
+          "heading": "Our Happy Customers"
+        },
+        {
+          "kind": "section",
+          "tag": "div",
+          "y": 9059,
+          "h": 474,
+          "cols": 3,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 9,
+          "heading": null
+        },
+        {
+          "kind": "footer",
+          "tag": "footer",
+          "y": 9587,
+          "h": 790,
+          "cols": 1,
+          "bg": "rgba(0, 0, 0, 0)",
+          "media": 20,
+          "heading": null
+        }
+      ],
+      "title": "Metro theme – metro-theme-demo",
+      "fonts": [
+        {
+          "v": "Muli",
+          "c": 7001
+        },
+        {
+          "v": "Archivo",
+          "c": 1911
+        },
+        {
+          "v": "Cormorant",
+          "c": 40
+        },
+        {
+          "v": "",
+          "c": 2
+        }
+      ],
+      "sizes": [
+        {
+          "v": "14px",
+          "c": 4489
+        },
+        {
+          "v": "12px",
+          "c": 2371
+        },
+        {
+          "v": "16px",
+          "c": 602
+        },
+        {
+          "v": "18px",
+          "c": 449
+        },
+        {
+          "v": "10px",
+          "c": 252
+        },
+        {
+          "v": "50px",
+          "c": 154
+        },
+        {
+          "v": "40px",
+          "c": 143
+        },
+        {
+          "v": "30px",
+          "c": 132
+        }
+      ],
+      "palette": {
+        "text": [
+          {
+            "v": "rgb(0, 0, 0)",
+            "c": 6684
+          },
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 1030
+          },
+          {
+            "v": "rgb(178, 178, 178)",
+            "c": 924
+          },
+          {
+            "v": "color(srgb 1 1 1 / 0.5)",
+            "c": 113
+          },
+          {
+            "v": "color(srgb 1 1 1 / 0.6)",
+            "c": 90
+          },
+          {
+            "v": "rgb(92, 92, 92)",
+            "c": 85
+          }
+        ],
+        "background": [
+          {
+            "v": "rgb(255, 255, 255)",
+            "c": 13376427
+          },
+          {
+            "v": "rgb(206, 206, 210)",
+            "c": 3088236
+          },
+          {
+            "v": "rgb(246, 246, 246)",
+            "c": 2059213
+          },
+          {
+            "v": "rgb(36, 36, 36)",
+            "c": 1487203
+          },
+          {
+            "v": "rgb(244, 244, 245)",
+            "c": 899291
+          },
+          {
+            "v": "rgb(25, 22, 22)",
+            "c": 368270
+          }
+        ]
+      },
+      "navLabels": [],
+      "buttons": 32,
+      "primaryButtons": 25,
+      "outboundLinks": 15,
+      "images": 153,
+      "h1": null
+    }
+  }
+}

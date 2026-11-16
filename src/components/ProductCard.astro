@@ -1,0 +1,65 @@
+---
+import type { ProductItem } from '../types/catalog';
+
+interface Props {
+  product: ProductItem;
+  categoryLabel?: string;
+}
+
+const { product, categoryLabel } = Astro.props;
+---
+
+<article class="group flex flex-col justify-between">
+  <!-- Clean Image Stage: Flat, unboxed, subtle hover -->
+  <a
+    href={`/produk/${product.slug}`}
+    class="block relative aspect-square w-full bg-neutral overflow-hidden focus:outline-none"
+    aria-label={`View ${product.title} details`}
+  >
+    <img
+      src={product.image}
+      alt={product.alt || product.title}
+      loading="lazy"
+      decoding="async"
+      width="384"
+      height="384"
+      class="w-full h-full object-contain p-4 transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+    />
+  </a>
+
+  <!-- Metadata: Natural Typography without Container Frames -->
+  <div class="pt-3 pb-1 flex flex-col flex-grow justify-between space-y-2.5">
+    <div class="space-y-1">
+      {categoryLabel && (
+        <span class="block text-xs uppercase tracking-[0.12em] text-muted font-medium">
+          {categoryLabel}
+        </span>
+      )}
+      <h2 class="text-sm font-medium text-charcoal line-clamp-2 leading-snug group-hover:text-terracotta transition-colors">
+        <a href={`/produk/${product.slug}`}>
+          {product.title}
+        </a>
+      </h2>
+    </div>
+
+    <!-- Price & Outbound CTA to 99ribu.com -->
+    <div class="pt-2 border-t border-hairline flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+      <span class="text-sm font-semibold text-charcoal">
+        {product.price}
+      </span>
+
+      <a
+        href={product.href}
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        class="inline-flex items-center justify-center space-x-1.5 px-3 py-1.5 min-h-[30px] text-xs font-medium text-white bg-charcoal hover:bg-black transition-colors focus:outline-none"
+        aria-label={`Buy ${product.title} on 99ribu.com`}
+      >
+        <span>Buy on 99ribu</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</article>

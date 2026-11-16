@@ -1,0 +1,267 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { getCollection } from 'astro:content';
+import { getAllProducts } from '../../utils/catalog';
+import { getOrganizationSchema, getWebSiteSchema, getBreadcrumbSchema } from '../../utils/seo';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('artikel');
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article }
+  }));
+}
+
+interface Props {
+  article: any;
+}
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+
+const allProducts = getAllProducts();
+// Pick 4 curated products as recommendations
+const featuredProducts = allProducts.slice(0, 4);
+
+const breadcrumbItems = [
+  { name: 'Home', url: '/' },
+  { name: 'Editorial', url: '/artikel' },
+  { name: article.data.title, url: `/artikel/${article.slug}` }
+];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': article.data.title,
+  'description': article.data.description,
+  'image': [article.data.heroImage],
+  'datePublished': article.data.publishDate,
+  'dateModified': article.data.updatedDate || article.data.publishDate,
+  'author': {
+    '@type': 'Organization',
+    'name': article.data.author || 'Editorial Serba 99ribu',
+    'url': 'https://serba99ribu.com'
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'Serba 99ribu',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': 'https://serba99ribu.com/favicon.svg'
+    }
+  },
+  'mainEntityOfPage': {
+    '@type': 'WebPage',
+    '@id': `https://serba99ribu.com/artikel/${article.slug}`
+  }
+};
+
+const schemas = [
+  getOrganizationSchema(),
+  getWebSiteSchema(),
+  getBreadcrumbSchema(breadcrumbItems),
+  articleSchema
+];
+---
+
+<BaseLayout
+  title={`${article.data.title} — Serba 99ribu`}
+  description={article.data.description}
+  image={article.data.heroImage}
+  ogType="article"
+  schemas={schemas}
+>
+  <Header />
+
+  <main class="flex-grow pt-24 sm:pt-28 pb-20">
+    <!-- Breadcrumb -->
+    <div class="border-b border-hairline bg-surface py-3.5 mb-8">
+      <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="flex items-center space-x-2 text-xs text-muted overflow-x-auto hide-scrollbar" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-charcoal transition-colors">Home</a>
+          <span>/</span>
+          <a href="/artikel" class="hover:text-charcoal transition-colors">Editorial</a>
+          <span>/</span>
+          <span class="text-charcoal font-medium truncate max-w-xs sm:max-w-md">{article.data.title}</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Article Header -->
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header class="mb-8 sm:mb-12 text-center">
+        <div class="inline-flex items-center space-x-2 mb-3">
+          <span class="bg-charcoal/10 text-charcoal text-[11px] uppercase tracking-widest px-3 py-1 font-medium">
+            {article.data.category}
+          </span>
+          <span class="text-xs text-muted">
+            • {article.data.publishDate}
+          </span>
+        </div>
+
+        <h1 class="font-editorial text-3xl sm:text-4xl lg:text-5xl text-charcoal font-normal tracking-tight leading-tight mb-4">
+          {article.data.title}
+        </h1>
+
+        <p class="text-base sm:text-lg text-muted font-light leading-relaxed max-w-2xl mx-auto italic font-editorial">
+          {article.data.description}
+        </p>
+
+        <div class="mt-6 flex items-center justify-center space-x-3 text-xs text-muted">
+          <span>Ditulis oleh: <strong class="font-medium text-charcoal">{article.data.author}</strong></span>
+        </div>
+      </header>
+
+      <!-- Hero Image -->
+      <div class="mb-10 sm:mb-14 overflow-hidden border border-hairline shadow-subtle aspect-[16/9] bg-surface">
+        <img
+          src={article.data.heroImage}
+          alt={article.data.title}
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Article Body -->
+      <div class="article-body prose prose-neutral max-w-none text-charcoal leading-relaxed text-sm sm:text-base font-light mb-14">
+        <Content />
+      </div>
+
+      <!-- Tags & Share Footer -->
+      <footer class="pt-6 border-t border-hairline mb-16">
+        <div class="flex flex-wrap items-center gap-2 mb-8">
+          <span class="text-xs uppercase tracking-wider text-muted mr-2 font-medium">Topik Terkait:</span>
+          {article.data.tags.map((tag: string) => (
+            <span class="bg-surface text-charcoal border border-hairline text-xs px-3 py-1 rounded-sm">
+              #{tag}
+            </span>
+          ))}
+        </div>
+
+        <!-- Curated Discovery Callout -->
+        <div class="bg-surface border border-hairline p-6 sm:p-8 rounded-sm text-center">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-muted block mb-2">Kurasi Pilihan</span>
+          <h3 class="font-editorial text-2xl text-charcoal font-normal mb-2">
+            Belanja Cerdas Produk Berkualitas Maksimal Rp 99.000
+          </h3>
+          <p class="text-xs text-muted max-w-lg mx-auto mb-5 leading-relaxed font-light">
+            Temukan ragam koleksi fashion, perlengkapan rumah tangga, aksesoris otomotif, dan kecantikan dengan harga bersahabat dan kualitas teruji.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="/#katalog"
+              class="px-6 py-2.5 bg-charcoal text-white text-xs uppercase tracking-widest font-medium hover:bg-black transition-colors"
+            >
+              Eksplor Katalog
+            </a>
+            <a
+              href="https://99ribu.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-2.5 border border-hairline bg-white text-charcoal text-xs uppercase tracking-widest font-medium hover:bg-canvas transition-colors"
+            >
+              Kunjungi 99ribu.com
+            </a>
+          </div>
+        </div>
+      </footer>
+    </article>
+
+    <!-- Curated Recommended Products Section -->
+    {featuredProducts.length > 0 && (
+      <section class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 pt-12 border-t border-hairline">
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <span class="text-[11px] uppercase tracking-[0.2em] text-muted block">Rekomendasi Terkait</span>
+            <h2 class="font-editorial text-2xl sm:text-3xl text-charcoal font-normal">
+              Produk Esensial Serba 99 Ribu
+            </h2>
+          </div>
+          <a href="/#katalog" class="text-xs uppercase tracking-widest font-medium text-charcoal hover:underline">
+            Lihat Semua &rarr;
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          {featuredProducts.map((prod) => (
+            <ProductCard product={prod} />
+          ))}
+        </div>
+      </section>
+    )}
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  .article-body h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 0.5rem;
+  }
+  .article-body h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.35rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: #262626;
+  }
+  .article-body p {
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+  }
+  .article-body ul, .article-body ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
+  .article-body li {
+    margin-bottom: 0.5rem;
+  }
+  .article-body blockquote {
+    border-left: 3px solid #262626;
+    padding-left: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.02);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .article-body table {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+  .article-body th {
+    background-color: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .article-body td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 1rem;
+  }
+  .article-body a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .article-body a:hover {
+    opacity: 0.75;
+  }
+</style>

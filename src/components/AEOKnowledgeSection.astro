@@ -1,0 +1,47 @@
+---
+export const aeoQuestions = [
+  {
+    question: "What is Serba 99ribu?",
+    answer: "Serba 99ribu is an independent lifestyle catalog that curates functional essentials across fashion, beauty, home goods, automotive accessories, and nutrition, strictly capped at a maximum price of Rp 99.000 (~$6.20 USD) in Indonesia."
+  },
+  {
+    question: "How does checkout, payment, and delivery work?",
+    answer: "When you select an item, Serba 99ribu routes you directly to the verified supplier's official product page on 99ribu.com. Checkout supports secure online payments, bank transfer, and nationwide Cash on Delivery (COD) across Indonesia with tracked courier delivery."
+  },
+  {
+    question: "Are all products guaranteed to be priced under Rp 99.000?",
+    answer: "Yes. Every item featured on Serba 99ribu undergoes strict pricing verification to ensure it remains at or below the Rp 99.000 ceiling, ensuring transparent value without unexpected markups."
+  },
+  {
+    question: "What product departments are curated on Serba 99ribu?",
+    answer: "The platform curates six core departments: Women's Fashion (bags and footwear), Men's Essentials (apparel and accessories), Beauty & Fragrance (Extrait de Parfum and skincare), Home & Living (maintenance and sanitation tools), Automotive Care (motorcycle accessories), and Wellness & Nutrition (honey and herbal supplements)."
+  }
+];
+---
+
+<section id="faq" class="py-16 sm:py-24 border-b border-hairline bg-surface" aria-labelledby="knowledge-heading">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mb-12 space-y-2">
+      <h2 id="knowledge-heading" class="font-editorial text-2xl sm:text-4xl font-semibold text-charcoal">
+        Frequently Asked Questions
+      </h2>
+      <p class="text-sm text-muted leading-relaxed">
+        Key details about our curation principles, affiliate partnership with 99ribu.com, and order fulfillment.
+      </p>
+    </div>
+
+    <!-- Editorial Q&A Grid: 2 Columns, Borderless, Clean Lines -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
+      {aeoQuestions.map((item) => (
+        <article class="space-y-2.5 pb-6 border-b border-hairline">
+          <h3 class="font-editorial text-lg sm:text-xl font-semibold text-charcoal">
+            {item.question}
+          </h3>
+          <p class="text-xs sm:text-sm text-muted leading-relaxed">
+            {item.answer}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

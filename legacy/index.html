@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serba 99ribu - Kurasi Gaya Hidup & Kategori Belanja di Bawah Rp99.000</title>
+  <meta name="description" content="Katalog kurasi kategori belanja pilihan serba di bawah Rp99.000. Temukan koleksi fashion, kecantikan, rumah tangga, dapur, dan otomotif berkualitas dari partner resmi 99ribu.com.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-cream: #fcfbfa;
+      --bg-card: #ffffff;
+      --bg-tint: #f5f3ef;
+      --text-main: #18181b;
+      --text-muted: #52525b;
+      --text-subtle: #71717a;
+      --accent-warm: #c2410c;
+      --accent-hover: #9a3412;
+      --border-subtle: #e7e5e0;
+      --border-dark: #27272a;
+      --radius-card: 16px;
+      --radius-pill: 9999px;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* 1. TOP ANNOUNCEMENT */
+    .top-announcement {
+      background: var(--text-main);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+      padding: 10px 16px;
+      letter-spacing: 0.3px;
+    }
+
+    .top-announcement span {
+      color: #fed7aa;
+      font-weight: 700;
+    }
+
+    /* 2. REFINED EDITORIAL HEADER */
+    .site-header {
+      background: var(--bg-cream);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 78px;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--text-main);
+      white-space: nowrap;
+    }
+
+    .brand-logo span.dot {
+      color: var(--accent-warm);
+    }
+
+    .header-nav {
+      display: none;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    @media (min-width: 768px) {
+      .header-nav {
+        display: flex;
+      }
+    }
+
+    .header-nav a {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.2px;
+      transition: color 150ms ease-out;
+    }
+
+    .header-nav a:hover {
+      color: var(--accent-warm);
+    }
+
+    .header-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--text-main);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      transition: background-color 150ms ease-out;
+    }
+
+    .header-cta-btn:hover {
+      background: var(--accent-warm);
+    }
+
+    /* 3. ATMOSPHERIC EDITORIAL HERO */
+    .hero-editorial {
+      padding: 64px 0 40px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .hero-editorial {
+        padding: 88px 0 56px;
+      }
+    }
+
+    .hero-kicker {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent-warm);
+      margin-bottom: 16px;
+    }
+
+    .hero-headline {
+      font-family: var(--font-serif);
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--text-main);
+      max-width: 820px;
+      margin: 0 auto 20px;
+      letter-spacing: -0.5px;
+    }
+
+    @media (min-width: 768px) {
+      .hero-headline {
+        font-size: 54px;
+      }
+    }
+
+    .hero-subtitle {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+
+    .category-pills-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .category-jump-pill {
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      transition: background-color 150ms ease-out, border-color 150ms ease-out;
+    }
+
+    .category-jump-pill:hover {
+      background: var(--bg-tint);
+      border-color: var(--text-main);
+    }
+
+    /* 4. SECTION HEADING */
+    .section-intro {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+
+    @media (min-width: 768px) {
+      .section-intro {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent-warm);
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--text-main);
+      letter-spacing: -0.5px;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 480px;
+    }
+
+    /* 5. ASYMMETRICAL CATEGORY LOOKBOOK GRID */
+    .category-showcase-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+
+    @media (min-width: 768px) {
+      .category-showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+      }
+    }
+
+    .category-lookbook-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 200ms ease-out, box-shadow 200ms ease-out, border-color 200ms ease-out;
+    }
+
+    .category-lookbook-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(24, 24, 27, 0.05);
+      border-color: #d4d4d8;
+    }
+
+    /* HERO FULL-WIDTH CATEGORY CARD */
+    @media (min-width: 768px) {
+      .category-lookbook-card.card-featured {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
+      }
+    }
+
+    .category-image-wrap {
+      position: relative;
+      aspect-ratio: 16 / 11;
+      background: var(--bg-tint);
+      overflow: hidden;
+    }
+
+    .category-lookbook-card.card-featured .category-image-wrap {
+      aspect-ratio: 16 / 10;
+      height: 100%;
+    }
+
+    .category-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 300ms ease-out;
+    }
+
+    .category-lookbook-card:hover .category-image {
+      transform: scale(1.03);
+    }
+
+
+
+    .category-card-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .category-card-kicker {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent-warm);
+    }
+
+    .category-card-title {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.25;
+      margin-top: 4px;
+    }
+
+    .category-lookbook-card.card-featured .category-card-title {
+      font-size: 34px;
+    }
+
+    .category-card-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+
+    .category-footer-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 18px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .category-price-cap {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-subtle);
+    }
+
+    .btn-explore-category {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+      transition: color 150ms ease-out, transform 150ms ease-out;
+    }
+
+    .btn-explore-category:hover {
+      color: var(--accent-warm);
+      transform: translateX(2px);
+    }
+
+    .btn-explore-category svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* 6. EDITORIAL PHILOSOPHY CALLOUT */
+    .philosophy-section {
+      background: var(--bg-tint);
+      border-radius: var(--radius-card);
+      padding: 44px 28px;
+      text-align: center;
+      margin-bottom: 64px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    @media (min-width: 768px) {
+      .philosophy-section {
+        padding: 56px 48px;
+      }
+    }
+
+    .philosophy-quote {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--text-main);
+      max-width: 780px;
+      margin: 0 auto 16px;
+    }
+
+    @media (min-width: 768px) {
+      .philosophy-quote {
+        font-size: 32px;
+      }
+    }
+
+    .philosophy-author {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent-warm);
+    }
+
+    /* 7. EDITORIAL SHOPPABLE ARTICLES (BY CATEGORY) */
+    .guides-section {
+      margin-bottom: 64px;
+    }
+
+    .guides-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .guides-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .guide-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 150ms ease-out, box-shadow 150ms ease-out;
+    }
+
+    .guide-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(24, 24, 27, 0.05);
+    }
+
+    .guide-thumb-wrap {
+      aspect-ratio: 16 / 10;
+      background: var(--bg-tint);
+      overflow: hidden;
+    }
+
+    .guide-thumb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 200ms ease-out;
+    }
+
+    .guide-card:hover .guide-thumb-img {
+      transform: scale(1.03);
+    }
+
+    .guide-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .guide-category-tag {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent-warm);
+    }
+
+    .guide-title {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+
+    .guide-excerpt {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .guide-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      color: var(--text-subtle);
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .guide-read-link {
+      font-weight: 700;
+      color: var(--text-main);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 150ms ease-out;
+    }
+
+    .guide-read-link:hover {
+      color: var(--accent-warm);
+    }
+
+    /* 8. EDITORIAL FOOTER */
+    .site-footer {
+      background: #18181b;
+      color: #ffffff;
+      padding: 56px 0 32px;
+    }
+
+    .footer-disclosure {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 3px solid var(--accent-warm);
+      padding: 16px 20px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #d4d4d8;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .footer-columns {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .footer-columns {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 48px;
+      }
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .footer-text {
+      font-size: 16px;
+      color: #a1a1aa;
+      line-height: 1.6;
+      max-width: 440px;
+    }
+
+    .footer-col-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+      color: #ffffff;
+    }
+
+    .footer-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-nav-list a {
+      font-size: 14px;
+      color: #a1a1aa;
+      transition: color 150ms ease-out;
+    }
+
+    .footer-nav-list a:hover {
+      color: #fed7aa;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 13px;
+      color: #a1a1aa;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    /* REDUCED MOTION */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 1ms !important;
+        transition-duration: 0s !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. TOP ANNOUNCEMENT -->
+  <div class="top-announcement">
+    Kurasi Gaya Hidup & Belanja Hemat &middot; <span>Semua Pilihan Maksimal Rp99.000</span>
+  </div>
+
+  <!-- 2. REFINED HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo" aria-label="Serba 99ribu Beranda">
+        Serba99ribu<span class="dot">.</span>
+      </a>
+
+      <nav aria-label="Navigasi Utama">
+        <ul class="header-nav">
+          <li><a href="#kategori">Kategori Pilihan</a></li>
+          <li><a href="#panduan">Panduan Belanja</a></li>
+          <li><a href="#filosofi">Standar Kurasi</a></li>
+        </ul>
+      </nav>
+
+      <a href="#kategori" class="header-cta-btn">
+        <span>Lihat Kategori</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 3. ATMOSPHERIC EDITORIAL HERO -->
+    <section class="hero-editorial" aria-labelledby="hero-title">
+      <p class="hero-kicker">Koleksi Pilihan & Kurasi Esensial</p>
+      <h1 id="hero-title" class="hero-headline">Keanggunan & Fungsi Terbaik, Seluruhnya di Bawah Rp99.000</h1>
+      <p class="hero-subtitle">
+        Menghadirkan kurasi departemen gaya hidup harian yang teruji. Eksplorasi kategori favorit Anda dengan jaminan harga transparan dan mutu terpercaya.
+      </p>
+
+      <div class="category-pills-row" aria-label="Lompat ke Kategori">
+        <a href="#fashion" class="category-jump-pill">Fashion Wanita</a>
+        <a href="#kecantikan" class="category-jump-pill">Kecantikan & Badan</a>
+        <a href="#rumah-tangga" class="category-jump-pill">Rumah Tangga</a>
+        <a href="#dapur" class="category-jump-pill">Alat Dapur</a>
+        <a href="#otomotif" class="category-jump-pill">Otomotif & Motor</a>
+        <a href="#busana-muslim" class="category-jump-pill">Busana Muslim</a>
+      </div>
+    </section>
+
+    <!-- 4. CATEGORY LOOKBOOK SHOWCASE (SHOWCASE PER KATEGORI SAJA) -->
+    <section id="kategori" aria-labelledby="category-headline">
+      <div class="section-intro">
+        <div>
+          <span class="section-label">Departemen Pilihan</span>
+          <h2 id="category-headline" class="section-title">Kategori Belanja Kurasi</h2>
+        </div>
+        <p class="section-desc">
+          Setiap kategori memuat puluhan produk pilihan terverifikasi yang langsung terhubung ke toko resmi 99ribu.com.
+        </p>
+      </div>
+
+      <div class="category-showcase-grid">
+        <!-- Category 1: Fashion & Tas (Featured Large) -->
+        <article class="category-lookbook-card card-featured" id="fashion">
+          <div class="category-image-wrap">
+            <img class="category-image" src="https://99ribu.com/media/catalog/love-sozoka-bag-tas-tote-wanita-korean-36a5290140a7.webp" alt="Kategori Fashion dan Tas Wanita Elegan" width="600" height="400" loading="eager">
+          </div>
+          <div class="category-card-body">
+            <div>
+              <span class="category-card-kicker">Departemen 01 &middot; 45+ Pilihan</span>
+              <h3 class="category-card-title">Fashion Wanita & Tas Elegan</h3>
+              <p class="category-card-desc">
+                Koleksi tas bahu, tote bag kasual gaya Korea, dan pouch kosmetik dengan sentuhan material kulit sintetis rapi. Pilihan sempurna untuk tampil anggun ke kantor maupun acara santai tanpa melampaui bujet Rp99.000.
+              </p>
+            </div>
+            <div class="category-footer-action">
+              <span class="category-price-cap">Maks. Rp99.000</span>
+              <a href="https://99ribu.com/kategori/fashion-wanita" target="_blank" rel="noopener noreferrer" class="btn-explore-category">
+                <span>Eksplor Koleksi Fashion</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 2: Kecantikan & Skincare -->
+        <article class="category-lookbook-card" id="kecantikan">
+          <div class="category-image-wrap">
+            <img class="category-image" src="https://99ribu.com/media/catalog/sr12-minyak-bulus-ea8789ad1a73.webp" alt="Kategori Perawatan Kulit dan Kecantikan Alami BPOM" width="500" height="340" loading="lazy">
+          </div>
+          <div class="category-card-body">
+            <div>
+              <span class="category-card-kicker">Departemen 02 &middot; 38+ Pilihan</span>
+              <h3 class="category-card-title">Kecantikan & Skincare Alami</h3>
+              <p class="category-card-desc">
+                Minyak herbal berkhasiat, shampoo ginseng alami anti rontok, parfum extrait segar, hingga perawatan gigi higienis yang terbukti aman dan berizin resmi BPOM.
+              </p>
+            </div>
+            <div class="category-footer-action">
+              <span class="category-price-cap">Maks. Rp99.000</span>
+              <a href="https://99ribu.com/kategori/kecantikan" target="_blank" rel="noopener noreferrer" class="btn-explore-category">
+                <span>Eksplor Kecantikan</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 3: Rumah Tangga & Living -->
+        <article class="category-lookbook-card" id="rumah-tangga">
+          <div class="category-image-wrap">
+            <img class="category-image" src="https://99ribu.com/media/catalog/selang-magic-hose-15m-2caee5c67247.webp" alt="Kategori Perlengkapan Rumah Tangga Praktis" width="500" height="340" loading="lazy">
+          </div>
+          <div class="category-card-body">
+            <div>
+              <span class="category-card-kicker">Departemen 03 &middot; 52+ Pilihan</span>
+              <h3 class="category-card-title">Perlengkapan Rumah Tangga</h3>
+              <p class="category-card-desc">
+                Solusi kebersihan pintar, selang semprot elastis, organizer ruang, dan perabot fungsional yang dirancang menjaga kerapian hunian Anda setiap hari.
+              </p>
+            </div>
+            <div class="category-footer-action">
+              <span class="category-price-cap">Maks. Rp99.000</span>
+              <a href="https://99ribu.com/kategori/rumah-tangga" target="_blank" rel="noopener noreferrer" class="btn-explore-category">
+                <span>Eksplor Rumah Tangga</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 4: Dapur & Kuliner -->
+        <article class="category-lookbook-card" id="dapur">
+          <div class="category-image-wrap">
+            <img class="category-image" src="https://99ribu.com/media/catalog/nasi-kebuli-instan-haira-beras-basmati-42a156cbaeb7.webp" alt="Kategori Perlengkapan Dapur dan Masak Praktis" width="500" height="340" loading="lazy">
+          </div>
+          <div class="category-card-body">
+            <div>
+              <span class="category-card-kicker">Departemen 04 &middot; 29+ Pilihan</span>
+              <h3 class="category-card-title">Alat Dapur & Kuliner Praktis</h3>
+              <p class="category-card-desc">
+                Paket bumbu instan beras basmati rempah, peralatan potong higienis, serta perkakas memasak serbaguna yang membuat proses menyajikan hidangan lezat jadi ringkas.
+              </p>
+            </div>
+            <div class="category-footer-action">
+              <span class="category-price-cap">Maks. Rp99.000</span>
+              <a href="https://99ribu.com/kategori/makanan-minuman" target="_blank" rel="noopener noreferrer" class="btn-explore-category">
+                <span>Eksplor Alat Dapur</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 5: Otomotif & Perawatan Motor -->
+        <article class="category-lookbook-card" id="otomotif">
+          <div class="category-image-wrap">
+            <img class="category-image" src="https://99ribu.com/media/catalog/cover-knalpot-klx-150-leher-srx-f34069293cc0.webp" alt="Kategori Aksesoris Otomotif dan Motor" width="500" height="340" loading="lazy">
+          </div>
+          <div class="category-card-body">
+            <div>
+              <span class="category-card-kicker">Departemen 05 &middot; 24+ Pilihan</span>
+              <h3 class="category-card-title">Otomotif & Proteksi Kendaraan</h3>
+              <p class="category-card-desc">
+                Pelindung knalpot tangguh, cairan pembersih bodi cepat kering, dan aksesoris perlengkapan mobilitas untuk menjaga kendaraan selalu prima dan siap jalan.
+              </p>
+            </div>
+            <div class="category-footer-action">
+              <span class="category-price-cap">Maks. Rp99.000</span>
+              <a href="https://99ribu.com/kategori/otomotif" target="_blank" rel="noopener noreferrer" class="btn-explore-category">
+                <span>Eksplor Otomotif</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Category 6: Busana Muslim & Ibadah -->
+        <article class="category-lookbook-card" id="busana-muslim">
+          <div class="category-image-wrap">
+            <img class="category-image" src="https://99ribu.com/media/catalog/sarung-archipilago-2cc000face4e.webp" alt="Kategori Busana Muslim dan Sarung Ibadah" width="500" height="340" loading="lazy">
+          </div>
+          <div class="category-card-body">
+            <div>
+              <span class="category-card-kicker">Departemen 06 &middot; 20+ Pilihan</span>
+              <h3 class="category-card-title">Busana Muslim & Ibadah</h3>
+              <p class="category-card-desc">
+                Sarung tenun berpola etnik nusantara dengan bahan adem dan jahitan kuat, memberikan ketenangan dan kenyamanan penuh saat menjalankan ibadah sehari-hari.
+              </p>
+            </div>
+            <div class="category-footer-action">
+              <span class="category-price-cap">Maks. Rp99.000</span>
+              <a href="https://99ribu.com/kategori/fashion-pria" target="_blank" rel="noopener noreferrer" class="btn-explore-category">
+                <span>Eksplor Busana Ibadah</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. EDITORIAL PHILOSOPHY QUOTE -->
+    <section class="philosophy-section" id="filosofi" aria-labelledby="philosophy-heading">
+      <h2 id="philosophy-heading" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Filosofi Kurasi Serba 99ribu</h2>
+      <blockquote class="philosophy-quote">
+        &ldquo;Kemewahan gaya hidup sejati terletak pada fungsi yang tepat dan desain yang bersahaja, bukan pada tingginya harga yang harus dibayarkan.&rdquo;
+      </blockquote>
+      <p class="philosophy-author">Standar Kurasi Serba99ribu.com &middot; Partner Resmi 99ribu</p>
+    </section>
+
+    <!-- 6. EDITORIAL SHOPPABLE GUIDES (ORGANIZED BY CATEGORY) -->
+    <section class="guides-section" id="panduan" aria-labelledby="guides-headline">
+      <div class="section-intro">
+        <div>
+          <span class="section-label">Wawasan & Panduan</span>
+          <h2 id="guides-headline" class="section-title">Panduan Belanja per Kategori</h2>
+        </div>
+        <p class="section-desc">
+          Artikel editorial mendalam yang mengulas cara memilih barang terbaik di setiap kategori dengan batas maksimal Rp99.000.
+        </p>
+      </div>
+
+      <div class="guides-grid">
+        <!-- Guide 1 -->
+        <article class="guide-card">
+          <div class="guide-thumb-wrap">
+            <img class="guide-thumb-img" src="https://99ribu.com/media/catalog/ransel-nadine-tas-backpack-wanita-simple-ea6d576d64fb.webp" alt="Panduan Memilih Tas Wanita Murah Berkualitas" width="400" height="250" loading="lazy">
+          </div>
+          <div class="guide-body">
+            <div>
+              <span class="guide-category-tag">Fashion & Aksesoris</span>
+              <h3 class="guide-title">5 Ciri Tas Bahu Elegan Under Rp99.000 yang Awet Dipakai Bertahun-tahun</h3>
+              <p class="guide-excerpt">
+                Mulai dari kekuatan resleting, ketebalan lapisan furing, hingga tekstur kulit sintetis. Simak tips memilih tas kantor murah yang tetap terlihat profesional dan berkelas.
+              </p>
+            </div>
+            <div class="guide-footer">
+              <span>Baca 3 Menit</span>
+              <a href="https://99ribu.com/kategori/fashion-wanita" target="_blank" rel="noopener noreferrer" class="guide-read-link">
+                <span>Lihat Rekomendasi</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Guide 2 -->
+        <article class="guide-card">
+          <div class="guide-thumb-wrap">
+            <img class="guide-thumb-img" src="https://99ribu.com/media/catalog/hy-london-nature-series-30ml-extrait-de-1c95b78ac93b.webp" alt="Panduan Skincare Herbal Terdaftar BPOM" width="400" height="250" loading="lazy">
+          </div>
+          <div class="guide-body">
+            <div>
+              <span class="guide-category-tag">Kecantikan & Tubuh</span>
+              <h3 class="guide-title">Merawat Kulit Glowing & Segar dengan Produk Herbal BPOM di Bawah Rp99.000</h3>
+              <p class="guide-excerpt">
+                Ulasan formulasi minyak esensial melati dan shampoo ginseng alami yang efektif mengatasi masalah kulit kering dan rambut rontok tanpa menguras dompet bulanan Anda.
+              </p>
+            </div>
+            <div class="guide-footer">
+              <span>Baca 4 Menit</span>
+              <a href="https://99ribu.com/kategori/kecantikan" target="_blank" rel="noopener noreferrer" class="guide-read-link">
+                <span>Lihat Rekomendasi</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Guide 3 -->
+        <article class="guide-card">
+          <div class="guide-thumb-wrap">
+            <img class="guide-thumb-img" src="https://99ribu.com/media/catalog/cover-mesin-crf-150-set-plus-rangka-b32bc1559576.webp" alt="Panduan Perawatan Rumah dan Perlengkapan Praktis" width="400" height="250" loading="lazy">
+          </div>
+          <div class="guide-body">
+            <div>
+              <span class="guide-category-tag">Rumah & Hunian</span>
+              <h3 class="guide-title">Panduan Menata Hunian Rapi & Bebas Repot Serba di Bawah Rp99.000</h3>
+              <p class="guide-excerpt">
+                Bagaimana mengoptimalkan ruang sempit dengan organizer serbaguna, peralatan pembersih higienis, dan perkakas mini yang bekerja maksimal dengan pengeluaran minimal.
+              </p>
+            </div>
+            <div class="guide-footer">
+              <span>Baca 3 Menit</span>
+              <a href="https://99ribu.com/kategori/rumah-tangga" target="_blank" rel="noopener noreferrer" class="guide-read-link">
+                <span>Lihat Rekomendasi</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. REFINED EDITORIAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-disclosure">
+        <strong>Pemberitahuan Transparansi Afiliasi:</strong> Serba99ribu.com adalah portal kurasi belanja independen dan website rujukan affiliate resmi untuk produk terverifikasi dari 99ribu.com. Saat Anda mengklik link departemen dan melakukan transaksi di website merchant resmi, kami menerima komisi referral tanpa ada biaya tambahan apapun untuk Anda.
+      </div>
+
+      <div class="footer-columns">
+        <div>
+          <div class="footer-brand">Serba99ribu.com</div>
+          <p class="footer-text">
+            Portal kurasi departemen belanja online dengan pendekatan editorial elegan. Menghadirkan pilihan terbaik gaya hidup dan kebutuhan esensial dengan harga pasti di bawah Rp99.000 per produk.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Departemen Kategori</div>
+          <ul class="footer-nav-list">
+            <li><a href="https://99ribu.com/kategori/fashion-wanita" target="_blank" rel="noopener noreferrer">Fashion Wanita</a></li>
+            <li><a href="https://99ribu.com/kategori/kecantikan" target="_blank" rel="noopener noreferrer">Kecantikan & Skincare</a></li>
+            <li><a href="https://99ribu.com/kategori/rumah-tangga" target="_blank" rel="noopener noreferrer">Rumah Tangga & Living</a></li>
+            <li><a href="https://99ribu.com/kategori/makanan-minuman" target="_blank" rel="noopener noreferrer">Alat Dapur & Kuliner</a></li>
+            <li><a href="https://99ribu.com/kategori/otomotif" target="_blank" rel="noopener noreferrer">Otomotif & Motor</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Tautan Resmi</div>
+          <ul class="footer-nav-list">
+            <li><a href="https://99ribu.com" target="_blank" rel="noopener noreferrer">Official Store 99ribu.com</a></li>
+            <li><a href="#panduan">Panduan Belanja</a></li>
+            <li><a href="#filosofi">Standar Kurasi</a></li>
+            <li><a href="https://99ribu.com/bantuan" target="_blank" rel="noopener noreferrer">Bantuan Belanja</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Serba99ribu.com &mdash; Hak Cipta Dilindungi.</p>
+        <p>Partner Afiliasi Resmi &middot; Seluruh Produk Maksimal Rp99.000</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

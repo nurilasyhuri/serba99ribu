@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  ogType?: 'website' | 'article' | 'product';
+  schemas?: object[];
+}
+
+const {
+  title = "Serba 99ribu — Curated Essentials Under Rp 99.000",
+  description = "A selective collection of modern lifestyle essentials across fashion, beauty, home, and automotive capped at Rp 99.000.",
+  image = "https://serba99ribu.com/hero-poster.jpg",
+  ogType = "website",
+  schemas = []
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://serba99ribu.com').href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- SEO Primary Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="author" content="Serba 99ribu" />
+    <meta name="publisher" content="Serba 99ribu" />
+
+    <!-- Crawler & Indexing Directives (AEO/SEO optimized) -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Serba 99ribu" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:alt" content={title} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- Preconnect & Domain Warmup for Fast Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://99ribu.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD Structured Data Injection -->
+    {schemas && schemas.length > 0 && schemas.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
+  </head>
+  <body class="bg-canvas text-charcoal flex flex-col min-h-screen">
+    <slot />
+  </body>
+</html>

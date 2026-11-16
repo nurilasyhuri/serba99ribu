@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { getCategoryGroups, categoryDefinitions } from '../../utils/catalog';
+import {
+  getOrganizationSchema,
+  getWebSiteSchema,
+  getBreadcrumbSchema,
+  getItemListSchema
+} from '../../utils/seo';
+import type { CategoryGroup } from '../../types/catalog';
+
+export function getStaticPaths() {
+  const groups = getCategoryGroups();
+  return groups.map((group) => ({
+    params: { slug: group.slug },
+    props: { group }
+  }));
+}
+
+interface Props {
+  group: CategoryGroup;
+}
+
+const { group } = Astro.props;
+
+const schemas = [
+  getOrganizationSchema(),
+  getWebSiteSchema(),
+  getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: group.title, url: `/kategori/${group.slug}` }
+  ]),
+  getItemListSchema(group.title, group.products)
+];
+---
+
+<BaseLayout
+  title={`${group.title} — Serba 99ribu`}
+  description={group.description}
+  schemas={schemas}
+>
+  <Header />
+
+  <main class="flex-grow pt-24 sm:pt-28">
+    <!-- Breadcrumb & Category Title -->
+    <div class="border-b border-hairline bg-surface py-8 sm:py-12">
+      <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Breadcrumbs -->
+        <nav class="flex items-center space-x-2 text-xs text-muted mb-4" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-charcoal transition-colors">Home</a>
+          <span>/</span>
+          <span class="text-charcoal font-medium">{group.title}</span>
+        </nav>
+
+        <div class="max-w-3xl space-y-2">
+          <h1 class="font-editorial text-3xl sm:text-5xl font-semibold text-charcoal leading-tight">
+            {group.title}
+          </h1>
+          <p class="text-sm sm:text-base text-muted leading-relaxed pt-1">
+            {group.description}
+          </p>
+        </div>
+
+        <div class="mt-6 flex flex-wrap items-center gap-3 pt-4 border-t border-hairline text-xs">
+          <span class="font-medium text-charcoal">{group.products.length} Curated Items</span>
+          <span class="text-subtle">&bull;</span>
+          <span class="text-muted">Capped at Rp 99.000</span>
+          <span class="text-subtle">&bull;</span>
+          <a
+            href="https://99ribu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-terracotta hover:underline inline-flex items-center space-x-1"
+          >
+            <span>Full Catalog on 99ribu.com</span>
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Nav Pill Strip -->
+    <div class="bg-canvas border-b border-hairline py-3">
+      <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2 overflow-x-auto hide-scrollbar">
+        <span class="text-xs uppercase tracking-wider text-muted font-medium mr-2 hidden sm:inline">Switch Department:</span>
+        <a href="/" class="px-3.5 py-1 text-xs bg-neutral hover:bg-charcoal hover:text-white transition-colors whitespace-nowrap">
+          All
+        </a>
+        {categoryDefinitions.map((cat) => (
+          <a
+            href={`/kategori/${cat.slug}`}
+            class={`px-3.5 py-1 text-xs whitespace-nowrap transition-colors border border-hairline ${
+              cat.slug === group.slug
+                ? 'bg-charcoal text-white font-medium'
+                : 'bg-surface text-charcoal hover:bg-neutral'
+            }`}
+          >
+            {cat.shortTitle}
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Products Grid (Clean Open Layout, No Card Boxes) -->
+    <div class="py-12 sm:py-16">
+      <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 sm:gap-x-8 sm:gap-y-12">
+          {group.products.map((product) => (
+            <ProductCard product={product} categoryLabel={group.shortTitle} />
+          ))}
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

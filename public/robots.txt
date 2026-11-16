@@ -1,0 +1,42 @@
+# Robots.txt for Serba 99ribu (https://serba99ribu.com)
+# Configured for Search Engines & Generative AI Discovery
+
+User-agent: *
+Allow: /
+
+# Google Search & AI Overviews
+User-agent: Googlebot
+Allow: /
+
+# Bing Search & Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+
+# OpenAI Search (ChatGPT Search)
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic Claude Search
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity Search & AI Citations
+User-agent: PerplexityBot
+Allow: /
+
+# Apple Search & Intelligence
+User-agent: Applebot
+Allow: /
+
+# Foundation Model Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# XML Sitemap
+Sitemap: https://serba99ribu.com/sitemap.xml
