@@ -68,7 +68,7 @@ const schemas = [
 ---
 
 <BaseLayout
-  title={`${article.data.title} — Serba 99ribu`}
+  title={`${article.data.title} - Serba 99ribu`}
   description={article.data.description}
   image={article.data.heroImage}
   ogType="article"
@@ -131,10 +131,10 @@ const schemas = [
 
       <!-- Tags & Share Footer -->
       <footer class="pt-6 border-t border-hairline mb-16">
-        <div class="flex flex-wrap items-center gap-2 mb-8">
-          <span class="text-xs uppercase tracking-wider text-muted mr-2 font-medium">Topik Terkait:</span>
+        <div class="flex flex-wrap items-baseline gap-x-2.5 text-xs text-muted mb-8">
+          <span class="uppercase tracking-wider font-medium text-charcoal">Tag:</span>
           {article.data.tags.map((tag: string) => (
-            <span class="bg-surface text-charcoal border border-hairline text-xs px-3 py-1 rounded-sm">
+            <span class="text-charcoal hover:underline underline-offset-4 cursor-pointer">
               #{tag}
             </span>
           ))}
